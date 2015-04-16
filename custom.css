@@ -23,7 +23,7 @@
 }
 [role=main] {
   position: static;
-  background: white;
+  background: #f8f8f8;
   padding: 0;
 }
 .module-content {
@@ -38,6 +38,7 @@
 .homepage .module-search {
   padding: 0;
   margin: 0;
+  background-color: #f8f8f8;
 }
 .homepage .module-search .module-content {
   border: 0;
@@ -46,12 +47,73 @@
   padding: 0;
   margin: 0;
 }
+.homepage .module-search .module-content .heading {
+  margin-bottom: 0px;
+  font-size: 30px;
+  line-height: normal;
+}
+.search-form .search-input {
+  position: static;
+}
+.search-form .search-input.search-giant input {
+  width: 770px;
+  height: 55px;
+  border: 0;
+  border-radius: 0;
+  font-size: 28px;
+  padding: 0 20px;
+  line-height: normal;
+  box-sizing: content-box;
+}
+.search-form .search-input.search-giant button {
+  margin: 0;
+  width: 80px;
+  height: 55px;
+  position: static;
+  display: inline-block;
+  background-color: #80b5db;
+  margin-left: -2px;
+}
+.search-form .search-input.search-giant button i {
+  color: #006bb6;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+}
+.span6 {
+  width: auto;
+  float: none;
+  margin-left: 0;
+}
+.module .module-heading {
+  padding: 0;
+  border: 0;
+  line-height: normal;
+  background-color: white;
+}
+.module .module-heading h3 {
+  line-height: normal;
+  margin: 0;
+}
+.dataset-item.module-content,
+.module-shallow .module-content:first-child {
+  margin: 0;
+  padding: 0;
+}
+.module-content.lower-content {
+  margin-bottom: 365px;
+}
+li {
+  line-height: normal;
+}
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   background-color: #f8f8f8;
   color: #333333;
+  font-size: 16px;
+  line-height: 1;
 }
 h1,
 h2,
@@ -60,6 +122,7 @@ h4,
 h5,
 h6,
 p {
+  line-height: normal;
   font-weight: normal;
   margin: 0;
 }
@@ -290,6 +353,7 @@ ul {
   padding: 35px 0;
   color: #272727;
   margin: 0px auto;
+  background-color: transparent;
 }
 .intro-text header {
   height: 100%;
@@ -320,7 +384,7 @@ ul {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 .search-form button {
-  width: 55px;
+  width: 80px;
   height: 55px;
   margin-left: -3px;
   background-color: #80b5db;
@@ -362,6 +426,7 @@ ul {
   height: 185px;
   border-radius: 50%;
   margin-bottom: 10px;
+  vertical-align: baseline;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 .search-by-cat .custom-media-item span {
@@ -371,7 +436,7 @@ ul {
 }
 .row {
   max-width: 940px;
-  margin: 135px auto 0;
+  margin: 135px auto;
   padding: 20px 0px 20px;
   border: 1px solid #ccc;
   background-color: white;
@@ -418,11 +483,13 @@ ul {
 .dataset-content h4 + div {
   font-size: 20px;
   color: #444444;
+  line-height: 1.2;
 }
 .dataset-content .dataset-group li {
   margin: 7px 0;
   color: #444444;
   font-style: italic;
+  font-size: 16px;
 }
 .dataset-resources {
   padding: 15px 50px 30px;
@@ -438,9 +505,9 @@ ul {
 .lower-content > :first-child {
   display: inline-block;
   width: 475px;
-  height: 835px;
+  height: 875px;
   overflow: hidden;
-  padding: 60px 30px;
+  padding: 40px 30px;
   border: 1px solid #ccc;
   background-color: white;
   vertical-align: top;
@@ -466,7 +533,7 @@ ul {
   color: #3389c5;
 }
 #block-views-last-articles-block .last-articles {
-  padding: 35px 15px;
+  padding: 30px 15px;
 }
 #block-views-last-articles-block .last-articles .views-field-title a {
   font-size: 22px;
@@ -481,6 +548,7 @@ ul {
 #block-views-last-articles-block .last-articles .views-field-body {
   font-size: 20px;
   color: #444444;
+  overflow: hidden;
 }
 #block-views-last-articles-block .last-articles .views-field-field-image {
   float: left;
@@ -488,24 +556,25 @@ ul {
   margin-right: 20px;
 }
 #block-views-last-articles-block .last-articles .views-field-field-image img {
-  max-width: 115px;
+  min-height: 120px;
+  max-width: 120px;
 }
 #block-views-last-articles-block .last-articles + .last-articles {
   border-top: 1px solid #cccccc;
 }
-#block-views-last-articles-block .last-articles:nth-child(n+5) {
+#block-views-last-articles-block .last-articles:nth-child(n+6) {
   display: none;
 }
 .site-footer {
   background: #b3b3b3;
   height: 635px;
   color: #333333;
+  padding: 0;
 }
 .site-footer .container {
-  height: 100%;
   max-width: 940px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 0 0;
 }
 .site-footer .container > * {
   display: inline-block;
@@ -523,6 +592,28 @@ ul {
   color: #555;
   font-size: 20px;
   margin: 15px 0;
+}
+.site-footer hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 0;
+}
+.site-footer .license a {
+  color: #d9d9d9;
+}
+.site-footer .ckan-footer-logo {
+  display: block;
+  margin: 2px 0 0 120px;
+  width: 68px;
+  height: 21px;
+  font-size: 0;
+  vertical-align: middle;
+  background: url("http://donneesqcsb.dcats.ca/base/images/ckan-logo-footer.png") no-repeat top left;
+}
+.site-footer .datacats-footer-logo {
+  margin: -43px 0 0 0;
+  vertical-align: middle;
 }
 .jssora21l,
 .jssora21r,
