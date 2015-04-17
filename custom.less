@@ -27,7 +27,16 @@
 
       li {
         float: none;
+        vertical-align: top;
       }
+    }
+  }
+
+  .site-search {
+    float: none;
+
+    .field {
+      position: static;
     }
   }
 }
@@ -327,7 +336,6 @@ background-color: #2da343;
     background-color: #d0d0d0;
     box-shadow: 0 3px 5px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.2) inset;
     position: relative;
-    overflow: hidden;
 
     .nav {
       max-width: 940px;
@@ -336,6 +344,10 @@ background-color: #2da343;
       > li {
         display: inline-block;
         padding: 24px 0;
+      }
+
+      > :last-child {
+        float: right;
       }
 
       > li + li {
@@ -367,8 +379,12 @@ background-color: #2da343;
       display: none;
       height: 55px;
       background-color: #bfbfbf;
-      text-align: center;
       box-shadow: 0 3px 5px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.2) inset;
+
+      div {
+        width: 940px;
+        margin: 0 auto;
+      }
 
       li {
         display: inline-block;
@@ -391,22 +407,27 @@ background-color: #2da343;
   }
 
   .site-search {
-    display: none; // temporary.
-    position: absolute;
-    right: 145px;
-    top: 185px;
+    margin: 0;
 
     label, input {
       display: none;
     }
 
-    button {
-      width: 32px;
-      height: 32px;
-      font-size: 32px;
-      line-height: 32px;
-      color: #999999;
+    button.btn-search {
+      width: 18px;
+      height: 18px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #9b9b9b;
       background-color: transparent;
+      position: static;
+      display: inline-block;
+      margin-top: 2px;
+      background-color: transparent;
+
+      i {
+        font-size: 18px;
+      }
     }
   }
 }

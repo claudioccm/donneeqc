@@ -20,6 +20,13 @@
 }
 .masthead .navigation .nav li {
   float: none;
+  vertical-align: top;
+}
+.masthead .site-search {
+  float: none;
+}
+.masthead .site-search .field {
+  position: static;
 }
 [role=main] {
   position: static;
@@ -280,7 +287,6 @@ ul {
   background-color: #d0d0d0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
   position: relative;
-  overflow: hidden;
 }
 .masthead .navigation .nav {
   max-width: 940px;
@@ -289,6 +295,9 @@ ul {
 .masthead .navigation .nav > li {
   display: inline-block;
   padding: 24px 0;
+}
+.masthead .navigation .nav > :last-child {
+  float: right;
 }
 .masthead .navigation .nav > li + li {
   margin-left: 30px;
@@ -313,8 +322,11 @@ ul {
   display: none;
   height: 55px;
   background-color: #bfbfbf;
-  text-align: center;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
+}
+.masthead .navigation .nav li ul div {
+  width: 940px;
+  margin: 0 auto;
 }
 .masthead .navigation .nav li ul li {
   display: inline-block;
@@ -330,22 +342,25 @@ ul {
   padding: 16px 0;
 }
 .masthead .site-search {
-  display: none;
-  position: absolute;
-  right: 145px;
-  top: 185px;
+  margin: 0;
 }
 .masthead .site-search label,
 .masthead .site-search input {
   display: none;
 }
-.masthead .site-search button {
-  width: 32px;
-  height: 32px;
-  font-size: 32px;
-  line-height: 32px;
-  color: #999999;
+.masthead .site-search button.btn-search {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #9b9b9b;
+  position: static;
+  display: inline-block;
+  margin-top: 2px;
   background-color: transparent;
+}
+.masthead .site-search button.btn-search i {
+  font-size: 18px;
 }
 .intro-text {
   height: 505px;

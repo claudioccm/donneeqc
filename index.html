@@ -116,47 +116,52 @@
         <nav class="section navigation">
           <ul class="nav nav-pills">
 
+            <!-- CHANGE: Insert div inside ul. But the best pratice should be the other way, ul inside div. Din't do this way due to js issues-->
             <li><a href="index.html#">Jeux de données</a>
-	  				<ul>
+	  				<ul><div>
 	  					<li><a href="http://donneesqcsb.dcats.ca/dataset">Toutes les données</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/group">Par thématique</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/tag">Par mots-clés</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/suggerer-donnees">Suggérer un jeu de données</a></li>
-	  				</ul>
+	  				</div></ul>
              </li>
             <li><a href="http://donneesqcsb.dcats.ca/organization">Publieurs</a>
              </li>
             <li><a href="http://donneesqcsb.dcats.ca/related">Réutilisations</a>
              </li>
              <li><a href="index.html#">Utilisateurs</a>
-	  				<ul>
+	  				<ul><div>
 	  					<li><a href="http://donneesqcsb.dcats.ca/content/api-catalogue/">API du catalogue</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/content/api-donnees/">API de données</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/suggerer-donnees">Soumettre une utilisation</a></li>
 
-	  				</ul>
+	  				</div></ul>
              </li>
              <li><a href="index.html#">Interagir</a>
-	  				<ul>
+	  				<ul><div>
 	  					<li><a href="http://donneesqcsb.dcats.ca/content/a-propos/">À propos de Données Québec</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/contact">Nous contacter</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/content/">Billets de blogue</a></li>
 	  					<li><a href="http://donneesqcsb.dcats.ca/content/a-propos/">À propos de Données Québec</a></li>
-	  				</ul>
+	  				</div></ul>
              </li>
 
+            <li>
+              <!-- CHANGE: Form inside nav-->
+              <form class="section site-search simple-input" action="http://donneesqcsb.dcats.ca/dataset" method="get">
+                <div class="field">
+                  <label for="field-sitewide-search">Rechercher des jeux de données</label>
+                  <input id="field-sitewide-search" type="text" name="q" placeholder="Rechercher" />
+                  <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+                </div>
+              </form>
+          </li>
           </ul>
+
         </nav>
 
 
 
-        <form class="section site-search simple-input" action="http://donneesqcsb.dcats.ca/dataset" method="get">
-          <div class="field">
-            <label for="field-sitewide-search">Rechercher des jeux de données</label>
-            <input id="field-sitewide-search" type="text" name="q" placeholder="Rechercher" />
-            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
-          </div>
-        </form>
 
 
     </div>
