@@ -10,6 +10,8 @@
 
 // Overwrite main.min.css.
 #homepage {
+  padding: 0 !important;
+
   .container {
     width: auto !important;
     position: static !important;
@@ -91,18 +93,18 @@
   }
 
   .search-form .search-input.search-giant input {
-    width: 770px;
+    max-width: 770px;
     height: 55px;
     border: 0;
     border-radius: 0;
     font-size: 28px;
     padding: 0 20px;
     line-height: normal;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 
   .search-form .search-input.search-giant button {
-    margin: 0;
+    margin: 0 0 30px 0;
     width: 80px;
     height: 55px;
     position: static;
@@ -391,7 +393,7 @@
         .box-shadow-inset;
 
         div {
-          width: 940px;
+          max-width: 940px;
           margin: 0 auto;
         }
 
@@ -444,7 +446,8 @@
 
   .intro-text {
     height: 505px;
-    width: 940px;
+    width: 100%;
+    max-width: 940px;
     padding: 35px 0;
     color: #272727;
     margin: 0px auto;
@@ -456,7 +459,7 @@
   }
 
   .search-form {
-    height: 195px;
+    min-height: 195px;
     background-color: #006bb6;
     text-align: center;
     .box-shadow;
@@ -473,9 +476,10 @@
     }
 
     input {
-      width: 770px;
+      max-width: 770px;
       height: 55px;
       padding: 0 20px;
+      margin-bottom: 30px;
       vertical-align: top;
       color: #888888;
       font-size: 28px;
@@ -486,6 +490,7 @@
       width: 80px;
       height: 55px;
       margin-left: -3px;
+      margin-bottom: 30px;
       background-color: #80b5db;
       vertical-align: top;
       .box-shadow;
@@ -573,7 +578,7 @@
 
     .media-heading + p {
       display: inline-block;
-      width: 519px;
+      max-width: 519px;
       margin: 0;
       font-size: 20px;
       color: #444444;
@@ -632,7 +637,7 @@
 
     > :first-child {
       display: inline-block;
-      width: 475px;
+      max-width: 475px;
       height: 875px;
       overflow: hidden;
       padding: 40px 30px;
@@ -720,11 +725,13 @@
       max-width: 940px;
       margin: 0 auto;
       padding: 10px 0 0;
+      background-color: #b3b3b3;
     }
 
     .container > * {
       display: inline-block;
       width: 32%;
+      min-width: 190px;
       vertical-align: top;
     }
 
@@ -830,10 +837,12 @@
 
   #slider1_container {
     height: 100% !important;
-    width: 940px !important;
+    width: 100% !important;
+    max-width: 940px !important;
 
-    > div, > div > div {
-      height: 100%;
+    > :first-child, > :first-child > div {
+      width: 100% !important;
+      height: 100% !important;
     }
   }
 
@@ -842,7 +851,8 @@
       position: absolute;
       left: 0px;
       top: 0px;
-      width: 940px;
+      width: 100%;
+      max-width: 940px;
       height: 505px;
       overflow: hidden;
 
@@ -880,5 +890,12 @@
         font-weight: 600;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  #homepage .lower-content .twitter-feed,
+  #homepage .carousel-slides .img-carousel {
+    display: none;
   }
 }
