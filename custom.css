@@ -1,5 +1,5 @@
 .box-shadow {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .box-shadow-inset {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
@@ -123,7 +123,7 @@
   line-height: normal;
 }
 #homepage {
-  font-family: 'Titillium Web', Georgia;
+  font-family: 'Titillium Web', sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   background-color: #f8f8f8;
@@ -141,6 +141,11 @@
   line-height: normal;
   font-weight: normal;
   margin: 0;
+}
+#homepage p {
+  font-family: Georgia, Serif;
+  font-size: 16px;
+  line-height: 1.55;
 }
 #homepage li {
   list-style: none;
@@ -244,15 +249,13 @@
   background-color: #814d9f;
 }
 #homepage .account-masthead {
-  height: 50px;
   background: #13368f;
   border-bottom: 0px solid #cccccc;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #homepage .account-masthead .container {
   max-width: 940px;
   margin: 0 auto;
-  padding: 13px 0 0;
   text-align: right;
 }
 #homepage .account-masthead .account ul li {
@@ -292,7 +295,6 @@
   height: 45px;
 }
 #homepage .masthead .navigation {
-  height: 70px;
   background-color: #d0d0d0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
   position: relative;
@@ -303,7 +305,7 @@
 }
 #homepage .masthead .navigation .nav > li {
   display: inline-block;
-  padding: 24px 0;
+  padding: 10px 0;
 }
 #homepage .masthead .navigation .nav > :last-child {
   float: right;
@@ -329,7 +331,6 @@
   right: 0;
   top: 100%;
   display: none;
-  height: 55px;
   background-color: #bfbfbf;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
 }
@@ -345,10 +346,13 @@
 }
 #homepage .masthead .navigation .nav li ul a {
   display: block;
-  color: #666;
+  color: #333;
   font-size: 16px;
   font-weight: normal;
-  padding: 16px 0;
+  padding: 6px 16px;
+}
+#homepage .masthead .navigation .nav li ul li:first-child a {
+  padding-left: 0;
 }
 #homepage .masthead .site-search {
   margin: 0;
@@ -387,7 +391,7 @@
   min-height: 195px;
   background-color: #006bb6;
   text-align: center;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #homepage .search-form h3,
 #homepage .search-form .search-input {
@@ -407,7 +411,7 @@
   vertical-align: top;
   color: #888888;
   font-size: 28px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #homepage .search-form button {
   width: 80px;
@@ -416,7 +420,7 @@
   margin-bottom: 30px;
   background-color: #80b5db;
   vertical-align: top;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #homepage .search-form button .icon-search {
   width: 32px;
@@ -449,12 +453,12 @@
 }
 #homepage .search-by-cat .custom-media-item img {
   display: inline-block;
-  width: 185px;
-  height: 185px;
+  width: 148px;
+  height: 148px;
   border-radius: 50%;
   margin-bottom: 10px;
   vertical-align: baseline;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #homepage .search-by-cat .custom-media-item span {
   display: block;
@@ -478,7 +482,7 @@
   display: inline-block;
   padding: 0 40px 5px 0;
   margin: 0;
-  font-size: 42px;
+  font-size: 26px;
   font-weight: bold;
   color: #3389c5;
   vertical-align: middle;
@@ -487,9 +491,10 @@
   display: inline-block;
   max-width: 519px;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   color: #444444;
   vertical-align: middle;
+  font-family: Georgia, Serif;
 }
 #homepage .dataset-item + .dataset-item {
   border-top: 1px solid #cccccc;
@@ -511,9 +516,11 @@
   font-size: 22px;
 }
 #homepage .dataset-content h4 + div {
-  font-size: 20px;
+  font-size: 16px;
   color: #444444;
   line-height: 1.2;
+  font-family: Georgia, Serif;
+  line-height: 24px;
 }
 #homepage .dataset-content .dataset-group li {
   margin: 7px 0;
@@ -558,7 +565,7 @@
   height: 100%;
 }
 #homepage #block-views-last-articles-block h2 {
-  font-size: 42px;
+  font-size: 30px;
   font-weight: bold;
   color: #3389c5;
 }
