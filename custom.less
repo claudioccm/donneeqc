@@ -74,51 +74,51 @@
     padding: 0;
     margin: 0;
     background-color: #f8f8f8;
-  }
 
-  .homepage .module-search .module-content {
-    border: 0;
-    border-radius: 0;
-    background-color: #006bb6;
-    padding: 0;
-    margin: 0;
-  }
+    .module-content {
+      border: 0;
+      border-radius: 0;
+      background-color: #006bb6;
+      padding: 0;
+      margin: 0;
 
-  .homepage .module-search .module-content .heading {
-    margin-bottom: 0px;
-    font-size: 30px;
-    line-height: normal;
-  }
+      .heading {
+        margin-bottom: 0px;
+        font-size: 30px;
+        line-height: normal;
+      }
+    }
 
-  .search-form .search-input {
-    position: static;
-  }
+    .search-form .search-input.search-giant {
+      position: static;
 
-  .search-form .search-input.search-giant input {
-    max-width: 770px;
-    height: 55px;
-    border: 0;
-    border-radius: 0;
-    font-size: 28px;
-    padding: 0 20px;
-    line-height: normal;
-    box-sizing: border-box;
-  }
+      input {
+        max-width: 770px;
+        height: 55px;
+        border: 0;
+        border-radius: 0;
+        font-size: 28px;
+        padding: 0 20px;
+        line-height: normal;
+        box-sizing: border-box;
+      }
 
-  .search-form .search-input.search-giant button {
-    margin: 0 0 30px 0;
-    width: 80px;
-    height: 55px;
-    position: static;
-    display: inline-block;
-    background-color: #80b5db;
-    margin-left: -2px;
+      button {
+        margin: 0 0 30px 0;
+        width: 80px;
+        height: 55px;
+        position: static;
+        display: inline-block;
+        background-color: #80b5db;
+        margin-left: -2px;
 
-    i {
-      color: #006bb6;
-      width: 32px;
-      height: 32px;
-      font-size: 32px;
+        i {
+          color: #006bb6;
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+        }
+      }
     }
   }
 
@@ -151,6 +151,26 @@
 
   li {
     line-height: normal;
+  }
+
+  .wrapper {
+    position: static;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    .dataset-item {
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .primary.span9, .secondary.span3 {
+    display: inline-block;
+    float: none;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -192,6 +212,7 @@
   }
 
   button, input {
+      font-family: @base-font;
       line-height: 1;
       padding: 0;
       border: 0;
@@ -443,7 +464,6 @@
         font-size: 18px;
         line-height: 18px;
         color: #9b9b9b;
-        background-color: transparent;
         position: static;
         display: inline-block;
         margin-top: 0;
@@ -455,7 +475,6 @@
       }
     }
   }
-
 
   .intro-text {
     height: 505px;
@@ -471,102 +490,106 @@
     }
   }
 
-  .search-form {
-    min-height: 195px;
-    background-color: #006bb6;
-    text-align: center;
-    .box-shadow;
-
-    h3, .search-input {
-      max-width: 940px;
-      margin: 0 auto;
-    }
-
-    h3 {
-      color: white;
-      font-size: 30px;
-      padding: 40px 0 20px;
-    }
-
-    input {
-      max-width: 770px;
-      height: 55px;
-      padding: 0 20px;
-      margin-bottom: 30px;
-      vertical-align: top;
-      color: #888888;
-      font-size: 28px;
-      .box-shadow;
-    }
-
-    button {
-      width: 80px;
-      height: 55px;
-      margin-left: -3px;
-      margin-bottom: 30px;
-      background-color: #80b5db;
-      vertical-align: top;
+  .module-search {
+    .search-form {
+      min-height: 195px;
+      background-color: #006bb6;
+      text-align: center;
       .box-shadow;
 
-
-      .icon-search {
-        width: 32px;
-        height: 32px;
-        font-size: 32px;
-        line-height: 32px;
-        color: #006bb6;
-        background-color: transparent;
+      h3, .search-input {
+        max-width: 940px;
+        margin: 0 auto;
       }
 
-      span {
-        display: none;
-      }
-    }
-  }
-
-  .search-by-cat {
-    h3 {
-      display: none;
-    }
-
-    .custom-media-grid {
-      max-width: 940px;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 50px;
-    }
-
-    .custom-media-item {
-      display: inline-block;
-      text-align: center;
-      margin-top: 30px;
-      width: 230px;
-
-      a {
-        display: inline-block;
+      h3 {
+        color: white;
+        font-size: 30px;
+        padding: 40px 0 20px;
       }
 
-      img {
-        display: inline-block;
-        width: 148px;
-        height: 148px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        vertical-align: baseline;
+      input {
+        max-width: 770px;
+        height: 55px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        vertical-align: top;
+        color: #888888;
+        font-size: 28px;
         .box-shadow;
       }
 
-      span { // TODO: change to div in HTML.
-        display: block;
-        font-size: 18px;
-        color: #555555;
+      button {
+        width: 80px;
+        height: 55px;
+        margin-left: -3px;
+        margin-bottom: 30px;
+        background-color: #80b5db;
+        vertical-align: top;
+        .box-shadow;
+
+
+        .icon-search {
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+          line-height: 32px;
+          color: #006bb6;
+          background-color: transparent;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .search-by-cat {
+      margin-bottom: 135px;
+
+      h3 {
+        display: none;
+      }
+
+      .custom-media-grid {
+        max-width: 940px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      .custom-media-item {
+        display: inline-block;
+        text-align: center;
+        margin-top: 30px;
+        width: 230px;
+
+        a {
+          display: inline-block;
+        }
+
+        img {
+          display: inline-block;
+          width: 148px;
+          height: 148px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          vertical-align: baseline;
+          .box-shadow;
+        }
+
+        span { // TODO: change to div in HTML.
+          display: block;
+          font-size: 18px;
+          color: #555555;
+        }
       }
     }
   }
 
   .row {
     max-width: 940px;
-    margin: 135px auto;
+    margin: 0 auto;
     padding: 20px 0px 20px;
     border: 1px solid #ccc;
     background-color: white;
@@ -756,7 +779,7 @@
       margin: 30px 0 15px;
       font-weight: 600;
 
-      > a {
+      a {
         color: #333333;
       }
 
@@ -906,6 +929,121 @@
         font-weight: 600;
       }
     }
+  }
+
+  // Dataset page.
+  .toolbar {
+    max-width: 940px;
+    margin: 40px auto 10px;
+
+    li, a, i {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .container > .search-form {
+    max-width: 940px;
+    margin: 10px auto 30px;
+    padding: 30px 35px;
+    background-color: white;
+    border: 0;
+    box-sizing: border-box;
+    .box-shadow;
+
+    input {
+      height: 40px;
+      max-width: 815px;
+      padding: 0 15px;
+      border: 1px solid #dddddd;
+      border-radius: 0;
+      font-size: 20px;
+      color: #888888;
+      line-height: normal;
+      vertical-align: top;
+
+      &:-moz-placeholder {color: #cccccc;}
+      &::-moz-placeholder {color: #cccccc;}
+      &-ms-input-placeholder {color: #cccccc;}
+      &::-webkit-input-placeholder {color: #cccccc;}
+    }
+
+    button {
+      width: 55px;
+      height: 40px;
+      margin: 0 0 0 -4px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #9b9b9b;
+      position: static;
+      display: inline-block;
+      background-color: #93b1d9;
+      vertical-align: top;
+
+      i {
+        font-size: 18px;
+        color: #4365b4;
+      }
+    }
+  }
+
+  .search-results {
+    max-width: 940px;
+    margin: 30px auto 50px;
+    color: #999999;
+
+    h2 {
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 10px;
+    }
+
+    .search-results-counter {
+      float: left;
+      margin-top: 17px;
+    }
+
+    .control-order-by {
+      float: right;
+      margin: 10px 0 0;
+
+      label, select {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      select {
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+        color: #999999;
+      }
+    }
+  }
+
+  .row.wrapper {
+    padding: 0;
+    margin-bottom: 365px;
+    border-top: 4px solid #4265b4;
+
+    .dataset-item + .dataset-item {
+      border-color: #eeeeee;
+    }
+  }
+
+  .primary.span9 {
+    width: 100%;
+  }
+
+  .secondary.span3 {
+    display: none;
+    width: 100%;
+    max-width: 215px;
   }
 }
 
