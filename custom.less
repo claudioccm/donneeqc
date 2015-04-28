@@ -590,7 +590,7 @@
   .row {
     max-width: 940px;
     margin: 0 auto;
-    padding: 20px 0px 20px;
+    padding: 0;
     border: 1px solid #ccc;
     background-color: white;
 
@@ -621,6 +621,30 @@
       vertical-align: middle;
       font-family: @text-font;
     }
+
+    .media-content i.md {
+      float: right;
+      width: 50px;
+      height: 50px;
+      margin: -20px -65px 0 0;
+      border: 1px solid #dddddd;
+      border-radius: 50px;
+      color: #dddddd;
+      font-size: 28px;
+      line-height: 50px;
+      text-align: center;
+      background-color: white;
+      box-sizing: border-box;
+      .box-shadow;
+    }
+  }
+
+  .span6:not(:first-child) .dataset-list.unstyled {
+    display: none;
+  }
+
+  .span6:not(.open) {
+    cursor: pointer;
   }
 
   .dataset-item + .dataset-item {
@@ -1022,6 +1046,7 @@
         border: 0;
         background-color: transparent;
         color: #999999;
+        outline-color: transparent;
       }
     }
   }
@@ -1038,6 +1063,21 @@
 
   .primary.span9 {
     width: 100%;
+
+    .pagination a {
+      padding: 7px 12px;
+      margin-top: 10px;
+      border: 1px solid #dddddd;
+      color: #aaaaaa;
+    }
+
+    .pagination li + li a {
+      border-left-width: 0;
+    }
+
+    small {
+      display: none;
+    }
   }
 
   .secondary.span3 {
