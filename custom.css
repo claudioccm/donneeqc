@@ -913,8 +913,85 @@
 }
 #homepage .secondary.span3 {
   display: none;
-  width: 100%;
-  max-width: 215px;
+  width: 70%;
+  border: 1px solid #cccccc;
+  border-left-width: 0;
+  max-width: 345px;
+  text-align: right;
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.1);
+}
+#homepage .secondary.span3 .module + .module {
+  border-top: 1px solid #ccc;
+}
+#homepage .secondary.span3 .module-heading {
+  font-size: 20px;
+  padding: 25px 40px 15px;
+  color: #666666;
+  text-transform: uppercase;
+}
+#homepage .secondary.span3 .module-heading .icon-filter {
+  display: none;
+}
+#homepage .secondary.span3 .nav-item {
+  border-width: 0;
+  padding: 7px 40px;
+}
+#homepage .secondary.span3 .nav-item:hover {
+  background-color: #d2e0f0;
+}
+#homepage .secondary.span3 .nav-item:hover:after {
+  content: "\f299";
+  float: right;
+  margin: -20px -30px 0 0;
+  font-family: 'Material Design Iconic Font';
+  font-size: 20px;
+  line-height: 1;
+  color: #4365b4;
+  speak: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  background: none;
+}
+#homepage .secondary.span3 .nav-item:hover a:before,
+#homepage .secondary.span3 .nav-item:hover a:after {
+  display: none;
+}
+#homepage .secondary.span3 .nav-item.active {
+  background-color: #4365b4;
+}
+#homepage .secondary.span3 .nav-item.active:after {
+  content: "\f0fb";
+  float: right;
+  margin: -20px -30px 0 0;
+  font-family: 'Material Design Iconic Font';
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  speak: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  background: none;
+}
+#homepage .secondary.span3 .nav-item.active a:before,
+#homepage .secondary.span3 .nav-item.active a:after {
+  display: none;
+}
+#homepage .secondary.span3 a,
+#homepage .secondary.span3 span {
+  font-size: 16px;
+  background-url: none;
+  background-image: none;
+  background-color: transparent;
+  position: static;
+}
+#homepage .secondary.span3 .module-footer {
+  border-width: 0;
+}
+#homepage .secondary.span3 .module-footer a {
+  font-size: 14px;
+  padding: 0 25px;
+  color: #333333;
+  text-decoration: underline;
 }
 @media (max-width: 767px) {
   #homepage .lower-content .twitter-feed,
