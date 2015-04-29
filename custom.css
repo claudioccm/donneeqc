@@ -310,7 +310,7 @@
 }
 #homepage .masthead .header-image {
   float: inherit;
-  height: 95px;
+  height: 70px;
   max-width: 940px;
   margin: 0 auto;
   padding: 25px 0 0;
@@ -506,7 +506,7 @@
   border-top: 1px solid #cccccc;
 }
 #homepage .group-list {
-  padding: 40px 40px 10px;
+  padding: 20px 40px;
 }
 #homepage .group-list .media-heading {
   display: inline-block;
@@ -530,7 +530,7 @@
   float: right;
   width: 50px;
   height: 50px;
-  margin: -20px -65px 0 0;
+  margin: 0 -65px 0 0;
   border: 1px solid #dddddd;
   border-radius: 50px;
   color: #dddddd;
@@ -1077,6 +1077,21 @@
 }
 #homepage .b-footer .copyright {
   font-size: 12px;
+}
+#homepage-header .b-social-media-header {
+  float: right;
+}
+#homepage-header .b-social-media-header .social-media-item {
+  height: 32px;
+  width: 32px;
+  background-color: #bbb;
+  margin: 0 0 0 5px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#homepage-header .b-social-media-header .social-media-item:hover {
+  background-color: #13368f;
+  color: white;
 }
 @media (max-width: 767px) {
   #homepage .lower-content .twitter-feed,
