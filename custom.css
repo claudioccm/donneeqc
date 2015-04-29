@@ -1,8 +1,16 @@
 .box-shadow {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .box-shadow-inset {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2) inset;
+}
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.chizel-line {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
 }
 #homepage {
   padding: 0 !important;
@@ -270,7 +278,7 @@
 #homepage .account-masthead {
   background: #13368f;
   border-bottom: 0px solid #cccccc;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .account-masthead .container {
   max-width: 940px;
@@ -410,7 +418,7 @@
   min-height: 195px;
   background-color: #006bb6;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .module-search .search-form h3,
 #homepage .module-search .search-form .search-input {
@@ -430,7 +438,7 @@
   vertical-align: top;
   color: #888888;
   font-size: 28px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .module-search .search-form button {
   width: 80px;
@@ -439,7 +447,7 @@
   margin-bottom: 30px;
   background-color: #80b5db;
   vertical-align: top;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .module-search .search-form button .icon-search {
   width: 32px;
@@ -480,7 +488,7 @@
   border-radius: 50%;
   margin-bottom: 10px;
   vertical-align: baseline;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .module-search .search-by-cat .custom-media-item span {
   display: block;
@@ -531,7 +539,7 @@
   text-align: center;
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .span6:not(:first-child) .dataset-list.unstyled {
   display: none;
@@ -813,7 +821,7 @@
   background-color: white;
   border: 0;
   box-sizing: border-box;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 #homepage .container > .search-form input {
   height: 40px;
@@ -992,6 +1000,83 @@
   padding: 0 25px;
   color: #333333;
   text-decoration: underline;
+}
+.b-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#homepage .b-footer {
+  background: #a9a9a9;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+#homepage .b-footer section {
+  padding: 40px 0;
+  display: block;
+  clear: both;
+}
+#homepage .b-footer section a {
+  color: #333;
+}
+#homepage .b-footer section a:hover {
+  text-decoration: underline;
+}
+#homepage .b-footer .creative-commons-badge {
+  float: left;
+  width: 100px;
+}
+#homepage .b-footer .social-media {
+  overflow: hidden;
+  float: right;
+}
+#homepage .b-footer .social-media .social-media-item {
+  display: inline-block;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  background-color: #888;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#homepage .b-footer .social-media .social-media-item:hover {
+  color: white;
+  background-color: #444;
+}
+#homepage .b-footer .middle {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+  overflow: hidden;
+}
+#homepage .b-footer .middle ul {
+  margin-right: 30px;
+}
+#homepage .b-footer .middle ul:last-child {
+  margin-right: 0;
+}
+#homepage .b-footer .middle ul li {
+  margin-bottom: 10px;
+}
+#homepage .b-footer .middle ul .top-level {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+#homepage .b-footer .middle .attribution {
+  margin-top: 130px;
+}
+#homepage .b-footer .middle .attribution p {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  vertical-align: bottom;
+}
+#homepage .b-footer .small-type {
+  font-size: 11px;
+}
+#homepage .b-footer .copyright {
+  font-size: 12px;
 }
 @media (max-width: 767px) {
   #homepage .lower-content .twitter-feed,

@@ -3,11 +3,21 @@
 @text-size: 16px;
 
   .box-shadow {
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   }
 
   .box-shadow-inset {
     box-shadow: 0 3px 5px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.2) inset;
+  }
+
+  .circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .chizel-line {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 -1px 0 rgba(0,0,0,.1) inset;
   }
 
 // Overwrite main.min.css.
@@ -1173,6 +1183,113 @@
     }
   }
 }
+
+.b-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homepage {
+
+.b-footer {
+  background: #a9a9a9;
+  overflow: hidden; // HACK Have no idea why this works!!!!
+  padding-bottom: 30px;
+
+  section {
+    padding: 40px 0;
+    display: block;
+    clear: both;
+
+    a { color: #333; }
+    a:hover { text-decoration: underline; }
+  }
+
+  .creative-commons-badge {
+    float: left;
+    width: 100px;
+  }
+
+  .social-media {
+    overflow: hidden;
+    float: right;
+  
+    .social-media-item {
+      display: inline-block;
+      margin: 0 5px;
+      height: 40px;
+      width: 40px;
+      background-color: #888;
+      cursor: pointer;
+      .circle;
+
+      &:hover {
+        color: white;
+        background-color: #444;
+      }
+    }
+  }
+
+  .middle {
+    .chizel-line;
+    overflow: hidden;
+
+    ul {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      li {
+        margin-bottom: 10px;
+
+        
+      }
+
+      .top-level {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 25px;
+      }
+    }
+
+    .attribution {
+      margin-top: 130px;
+
+      p {
+        float: left;
+        margin-right: 20px;
+        margin-top: 10px;
+        vertical-align: bottom;
+      }
+    }
+
+     
+
+
+  }
+
+
+
+
+
+  .small-type { font-size: 11px; }
+  .copyright { font-size: 12px; }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   #homepage .lower-content .twitter-feed,
